@@ -5,6 +5,8 @@ Counter example in AssemblyScript
 
 <!-- MAGIC COMMENT: DO NOT DELETE! Everything above this line is hidden on NEAR Examples page -->
 
+![](https://user-images.githubusercontent.com/54874641/130324752-5cb8c08b-3807-45cc-a702-effafea29606.png)
+
 ## Description
 
 This contract implements simple counter backed by storage on blockchain.
@@ -48,7 +50,12 @@ In the project root, login with `near-cli` by following the instructions after t
 near login
 ```
 
-Modify the top of `src/config.js`, changing the `CONTRACT_NAME` to be the NEAR account name in the file `neardev/dev-account`. It starts with `dev-`.
+~~Modify the top of `src/config.js`, changing the `CONTRACT_NAME` to be the NEAR account name in the file `neardev/dev-account`. It starts with `dev-`.~~
+
+
+ Modify the top of `src/config.js`, We need to change wallet address on testnet, example: const CONTRACT_NAME = 'mywallet.testnet'
+ 
+ Moreover, we need to add a empty file at ./neardev/dev-account.env.
 
 ```javascript
 …
